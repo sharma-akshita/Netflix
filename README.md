@@ -1,4 +1,4 @@
 # Netflix
-This is Netflix-Clone project done with HTML and CSS
+This is Netflix-Clone project designed using HTML and CSS
 <br />
 Author - Akshita Sharma
