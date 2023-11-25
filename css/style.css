@@ -6,6 +6,8 @@
     font-family: "Poppins";
 }
 
+/** Header Section **/
+
 header{
     background-image: linear-gradient(rgba(0,0,0,0.74), rgba(0,0,0,0.44)), url("../images/bg.jpg") ;
     background-size: cover;
@@ -123,10 +125,10 @@ header{
 
 .buttons{
     margin-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
-.buttons .btn-1{
+.btn-1{
     padding: 0.5rem 2.4rem 0.5rem 2rem;
     text-align: center;
     background-color: white;
@@ -137,7 +139,7 @@ header{
     margin-right: 10px;
 }
 
-.buttons .btn-2{
+.btn-2{
     padding: 0.5rem 2.4rem 0.5rem 2rem;
     text-align: center;
     background-color: rgba(109, 109, 110, 0.7);
@@ -146,3 +148,124 @@ header{
     cursor: pointer;
     font-size: 14px;
 }
+
+.box-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-header img{
+    cursor: pointer;
+    width: 230px;
+    border-radius: 5px;
+}
+
+/** Main Section **/
+
+main{
+    background-color: #141414;
+}
+
+.row h1{
+    font-size: 26px;
+    padding: 40px 0 5px 40px;
+    color: white;
+}
+
+.box, .box-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.box img{
+    cursor: pointer;
+    width: 230px;
+    border-radius: 5px;
+}
+
+.box-1, .box-2{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 10px;
+}
+
+.box-1 img, .box-2 img{
+    cursor: pointer;
+    width: 230px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.box-3 img{
+    cursor: pointer;
+    width: 134px;
+    border-radius: 5px;
+}
+
+hr{
+    border: none;
+    border-top: 0.1px solid rgba(245, 245, 245, 0.738);
+    padding: 20px 0px 20px 0px;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/** Footer Section **/
+
+footer{
+    background-color: #141414;
+}
+
+.panel1{
+    margin-left: 15%;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.panel1 i{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.panel2{
+    display: flex;
+    justify-content: space-evenly;
+    color: #888888;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.content a{
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.content a:hover {
+    color: #cdcccc;
+}
+
+.btn{
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    text-align: center;
+    background-color: #141414;
+    color: #888888;
+    border: 1px solid #888888;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-left: 14%;
+}
+
+.copyright{
+    color: #888888;
+    font-size: 10px;
+    margin-left: 14%;
+    padding-bottom: 20px;
+ }
