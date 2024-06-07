@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Kolker+Brush&family=Lato:wght@300;400;700&family=Manrope&family=Playfair+Display&family=Poppins&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Poppins";
@@ -8,8 +8,8 @@
 
 /** Header Section **/
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.74), rgba(0,0,0,0.44)), url("../images/bg.jpg") ;
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.44)), url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -18,7 +18,7 @@ header{
     top: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     height: 70px;
     align-items: center;
@@ -29,26 +29,26 @@ header{
     font-size: 14px;
 }
 
-.logo{
+.logo {
     width: 8%;
     cursor: pointer;
 }
 
-.left{
+.left {
     width: 59%;
     margin-left: 20px;
 }
 
-.left ul a{
+.left ul a {
     margin-left: 10px;
     cursor: pointer;
 }
 
-.left ul a:hover{
+.left ul a:hover {
     color: #d2d2d2;
 }
 
-.right{
+.right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -56,11 +56,11 @@ header{
     cursor: pointer;
 }
 
-.right p{
+.right p {
     margin-left: 15px;
 }
 
-.profile{
+.profile {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -68,67 +68,67 @@ header{
     margin-left: 5px;
 }
 
-.right i{
+.right i {
     font-size: 22px;
 }
 
-.profile img{
+.profile img {
     width: 30px;
     border-radius: 3px;
 }
 
-.profile i{
+.profile i {
     font-size: 17px;
 }
 
-.main{
+.main {
     margin-left: 25px;
-    margin-top:  100px;
+    margin-top: 100px;
     cursor: pointer;
 }
 
-.top{
+.top {
     display: flex;
     align-items: center;
 }
 
-.top p{
+.top p {
     color: #d2d2d2;
     font-size: 12px;
 }
 
-.top img{
+.top img {
     width: 20px;
 }
 
-.bottom{
+.bottom {
     color: white;
     margin-top: 8px;
 }
 
-.bottom h1{
+.bottom h1 {
     font-family: "Cormorant";
     font-size: 50px;
 }
 
-.bottom h5{
+.bottom h5 {
     font-size: 16px;
     margin-top: 5px;
     font-weight: bold;
 }
 
-.bottom p{
+.bottom p {
     font-size: 12px;
     margin-top: 5px;
     width: 35%;
 }
 
-.buttons{
+.buttons {
     margin-top: 70px;
     padding-bottom: 30px;
 }
 
-.btn-1{
+.btn-1 {
     padding: 0.5rem 2.4rem 0.5rem 2rem;
     text-align: center;
     background-color: white;
@@ -139,7 +139,7 @@ header{
     margin-right: 10px;
 }
 
-.btn-2{
+.btn-2 {
     padding: 0.5rem 2.4rem 0.5rem 2rem;
     text-align: center;
     background-color: rgba(109, 109, 110, 0.7);
@@ -149,13 +149,13 @@ header{
     font-size: 14px;
 }
 
-.box-header{
+.box-header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.box-header img{
+.box-header img {
     cursor: pointer;
     width: 230px;
     border-radius: 5px;
@@ -163,17 +163,52 @@ header{
 
 /** Main Section **/
 
-main{
+main {
     background-color: #141414;
 }
 
-.row h1{
+.row {
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 35px;
+}
+
+
+.arrow-left {
+    left: 10px;
+    padding-right: 80px;
+}
+
+.arrow-right {
+    right: 10px;
+    padding-left: 80px;
+}
+
+.row h1 {
     font-size: 26px;
     padding: 40px 0 5px 40px;
     color: white;
 }
 
-.box, .box-3{
+.box,
+.box-3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -181,32 +216,34 @@ main{
     padding-bottom: 5px;
 }
 
-.box img{
+.box img {
     cursor: pointer;
     width: 230px;
     border-radius: 5px;
 }
 
-.box-1, .box-2{
+.box-1,
+.box-2 {
     display: flex;
     align-items: center;
     padding: 5px 0px 5px 10px;
 }
 
-.box-1 img, .box-2 img{
+.box-1 img,
+.box-2 img {
     cursor: pointer;
     width: 230px;
     border-radius: 5px;
     margin-right: 8px;
 }
 
-.box-3 img{
+.box-3 img {
     cursor: pointer;
     width: 134px;
     border-radius: 5px;
 }
 
-hr{
+hr {
     border: none;
     border-top: 0.1px solid rgba(245, 245, 245, 0.738);
     padding: 20px 0px 20px 0px;
@@ -217,23 +254,23 @@ hr{
 
 /** Footer Section **/
 
-footer{
+footer {
     background-color: #141414;
 }
 
-.panel1{
+.panel1 {
     margin-left: 15%;
     margin-bottom: 15px;
     color: white;
 }
 
-.panel1 i{
+.panel1 i {
     margin-right: 20px;
     font-size: 22px;
     cursor: pointer;
 }
 
-.panel2{
+.panel2 {
     display: flex;
     justify-content: space-evenly;
     color: #888888;
@@ -241,7 +278,7 @@ footer{
     margin-bottom: 15px;
 }
 
-.content a{
+.content a {
     display: block;
     margin-bottom: 15px;
     cursor: pointer;
@@ -251,7 +288,7 @@ footer{
     color: #cdcccc;
 }
 
-.btn{
+.btn {
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     text-align: center;
     background-color: #141414;
@@ -263,9 +300,9 @@ footer{
     margin-left: 14%;
 }
 
-.copyright{
+.copyright {
     color: #888888;
     font-size: 10px;
     margin-left: 14%;
     padding-bottom: 20px;
- }
+}
